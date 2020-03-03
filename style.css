@@ -97,3 +97,57 @@ nav .mega-menu ul {
 nav .mega-menu ul li:hover {
 	background-color: transparent;
 }
+
+/*TIPS*/
+main {
+    margin: 300px 0;
+}
+
+.btn {
+    position: relative;
+}
+
+.btn button {
+	padding: 0 20px;
+	display: inline-block;
+	line-height: 50px;
+	margin: 24px 0 0;
+	outline: 0;
+	background-color: #e4e4e4;
+	border: 0;
+	font-size: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.tooltips {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    border: 1px solid #a845de;
+    padding: 30px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10000;
+    background-color: #a845de;
+    color: #fff;
+}
+
+.btn:hover .tooltips {
+	opacity: 1;
+	visibility: visible;
+}
+
+.tooltips::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #a845de;
+	position: absolute;
+	top: 100%;
+	left: 40px;
+	z-index: 0;
+}
