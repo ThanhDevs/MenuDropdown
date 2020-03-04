@@ -151,3 +151,8 @@ main {
 	left: 40px;
 	z-index: 0;
 }
+
+nav .mega-menu h3 {
+    font-size: 17px;
+    text-transform: lowercase;
+}
